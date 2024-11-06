@@ -1,39 +1,102 @@
+/* General Styles */
 body {
-  background-color:#121212
-  color:#f0f0f0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 a {
-  color: #f0f0f0;
-  transition: color 0.2s
+  color: #0066cc;
+  text-decoration: none;
 }
 
-a:hover{
-  color:#ffffff;
+a:hover {
+  color: #004999;
 }
 
-.navbar-brand, .nav-link {
-  font-weight:bold;
+/* Header */
+header.main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.jumbotron {
-  background:linear-gradient(180deg,#000000,#333333)
-  color:#ffffff;
-  padding:2rem;
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.footer{
-  background-color: #111111
-  color:#ffffff;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-.container h1,.container p{
-  font-weight: lighter;
-  font-size: 1.3em;
+header nav ul li a {
+  color: #ffffff;
+  font-weight: bold;
 }
 
-.icon-style{
-  font-size:1.5em;
-  color:#999
+header nav ul li a:hover {
+  color: #cccccc;
 }
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+  background-color: #f9f9fc;
+}
+
+.about-me img.pfp {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  max-width: 600px;
+  color: #555;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* Awards, Projects, and Certifications Sections */
+section.awards-section, 
+section.projects-section, 
+section.certifications-section {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.award, .project-item {
+  background-color: #f7f7f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0066cc;
