@@ -2,35 +2,24 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-  title:"Assignment 2"
+router.get('/home', function(req, res) {
+  res.render('home', { title: 'Home' });
 });
-/*GET Home page*/
-router.get('/home',function(req,res,next) {
-  res.render('index',{
-    title:'Home '
 
-  });
+/* GET about page. */
+router.get('/about', function(req, res) {
+  res.render('about', { title: 'About' });
 });
-/*GET About page*/
-router.get('/about',function(req,res,next) {
-  res.render('index',{
-    title:'About '
-    
-  });
+
+/* GET projects page. */
+router.get('/project', function(req, res) {
+  res.render('projects', { title: 'Projects' });
 });
-/*GET About page*/
-router.get('/project',function(req,res,next) {
-  res.render('index',{
-    title:'Project'
-  })
-})
-/*GET Contact me page*/
-router.get('/contact',function(req,res,next) {
-  res.render('index',{
-    title:'Contact Me '
-  })
-})
+
+/* GET contact page. */
+router.get('/contact', function(req, res) {
+  res.render('contact', { title: 'Contact Me' });
+});
 
 module.exports = router;
+
