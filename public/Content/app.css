@@ -1,0 +1,39 @@
+body {
+  background-color:#121212
+  color:#f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #f0f0f0;
+  transition: color 0.2s
+}
+
+a:hover{
+  color:#ffffff;
+}
+
+.navbar-brand, .nav-link {
+  font-weight:bold;
+}
+
+.jumbotron {
+  background:linear-gradient(180deg,#000000,#333333)
+  color:#ffffff;
+  padding:2rem;
+}
+
+.footer{
+  background-color: #111111
+  color:#ffffff;
+}
+
+.container h1,.container p{
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+.icon-style{
+  font-size:1.5em;
+  color:#999
+}
