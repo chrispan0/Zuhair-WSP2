@@ -1,19 +1,27 @@
 <% include partials/header.ejs %>
 <% include partials/main_nav.ejs %>
 
-<section id="About" class="about-me">
-    <div class="about-content">
-        <img src="/public/Assets/images/Pfp.jpg" alt="My Photo" class="pfp">
-        <div class="about-text">
-            <h3 style="text-align: justify">I am Zuhair uddin Mohammed, a student at Ontario Tech University in the Networking and IT Security program. I am a highly positive and compassionate individual dedicated to delivering my utmost effort to excel in every endeavour.</h3>
-            <h5 class="videotitle">My Introduction Video</h5>
-            <video controls class="introvideo" poster="/public/Assets/images/Introducing_me.webp">
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/Content/app.css"/>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Zuhair's Portfolio</div>
+    
+  </header>
+  
+  <div class="container">
+    <h1 class="section-title">Welcome to My Portfolio</h1>
+    <p>This is the home page of my personal portfolio. Here you can learn more about me, my projects, and how to contact me.</p>
+  </div>
+</body>
+</html>
 
 <% include partials/bottom_nav.ejs %>
 <% include partials/footer.ejs %>

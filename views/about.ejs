@@ -1,12 +1,37 @@
 <% include partials/header.ejs %>
 <% include partials/main_nav.ejs %>
-
-<section class="about-section">
-    <div class="container">
-        <h1>About Me</h1>
-        <p>Hello! I am Zuhair uddin Mohammed, passionate about Networking and IT Security. I'm currently studying at Ontario Tech University and actively working on various networking projects to strengthen my skills in the field.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/Content/app.css"/>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Zuhair's Portfolio</div>
+  </header>
+  
+  <section class="about-me">
+    <img src="Assets/images/Pfp.jpg" alt="My Photo" class="pfp"/>
+    <div class="about-text">
+      <h3>Hi! I am Zuhair Uddin Mohammed, currently a student at Ontario Tech University. I am passionate about Networking and IT Security, and I’m constantly looking to enhance my skills through hands-on projects.</h3>
+      <h5>Check out my Introduction Video!</h5>
+      <video controls class="introvideo" poster="/public/Assets/images/Introducing_me.webp">
+        <source src="/Assets/images/introducing_me.webp" type="png">
+        Your browser does not support the video tag.
+      </video>
     </div>
-</section>
+  </section>
+  
+  <footer id="footer">
+    <p>&copy; 2024 Zuhair Mohammed. <a href="mailto:zuhairuddin.mohammed@ontariotechu.net">Contact Me</a></p>
+  </footer>
+</body>
+</html>
+
 
 <% include partials/bottom_nav.ejs %>
 <% include partials/footer.ejs %>
